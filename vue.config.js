@@ -1,5 +1,8 @@
 // vue.config.js
 module.exports = {
     // options...
-    runtimeCompiler: true
+    runtimeCompiler: true,
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/truecaller_demo/'
+    : '/'
   }
